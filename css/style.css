@@ -10,70 +10,146 @@ body {
 
 /* Header */
 
-.header-content-container {
-    width: 100%;
+header {
+    text-align: right;
     height: 50px;
-    padding-right: 5px;
 }
 
-.icon-container {
+header a {
+    text-decoration: none;
+}
+
+.header-icon-container {
+    width: fit-content;
+    display: inline-block;
     background-color: #3e3e50;
     color: white;
-    border-radius: 5px;
-    padding: 2px 6px;
-    margin: 10px 3px;
+    font-size: 15px;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px 5px 0 0;
 }
-
-.fa-teamspeak {
-    margin-right: 3px;
-}
-
 
 /* Main */
+
+.main-side {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-side .fas {
+    color: rgb(23, 111, 184);
+    font-size: 50px;
+}
+
+.main-side span {
+    font-size: 15px;
+    color: white;
+}
+
+
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 .video-box {
     width: 250px;
     height: 150px;
-    background-color: red;
     margin: 5px;
+    position: relative;
 }
+
+.name {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    color: white;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.video-box.inactive .name::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f539";
+    padding: 0 5px 0 0;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.image-container > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 
 /* Footer */
 
-.footer-content {
+.footer-content-container {
+    width: 100%;
     height: 60px;
-    margin-top: 25px;
-    background-color: blue;
-}
-
-/* ID ONLY*/
-
-#general-container {
-    max-width: 1500px;
-    margin: 10px auto; 
-    background-color: black;
-}
-
-#videos-container {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(44, 38, 38);
+    color: white;
+    margin-top: 50px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    display: flex;
+    height: 100%;
+    text-align: center;
+}
+
+.nav-option {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.nav-option .fas,
+.nav-option .far {
+    font-size: 25px;
+}
+
+.nav-option span {
+    font-size: 14px;
+}
+
+.nav-option > button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    color: red;
+    background-color: rgb(68, 66, 66);
 }
 
 /* Generic classes */
 
-.clearfix {
-    content: '';
-    display: table;
-    clear: both;                
+.general-container {
+    max-width: 1600px;
+    margin: 10px auto; 
+    background-color: black;
 }
 
-.fl {
-    float: left;
-}
-
-.fr {
-    float: right;
+.flex {
+    display: flex;
 }
 
 
