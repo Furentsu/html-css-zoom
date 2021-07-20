@@ -127,6 +127,10 @@ header a {
     font-size: 25px;
 }
 
+.footer-center .nav-option:nth-child(4) .far {
+    color: lightgreen;
+}
+
 .nav-option span {
     font-size: 14px;
 }
